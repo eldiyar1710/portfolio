@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view/projects/components/project_deatail.dart';
-import 'package:get/get.dart';
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
-import '../../../view model/getx_controllers/projects_controller.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../view model/riverpod/projects_provider.dart';
 import 'image_viewer.dart';
 import '../../common/glass_container.dart';
 
-class ProjectStack extends StatelessWidget {
-  final controller = Get.put(ProjectController());
-  ProjectStack({super.key, required this.index});
+class ProjectStack extends ConsumerWidget {
+  const ProjectStack({super.key, required this.index});
   final int index;
   @override
-  Widget build(BuildContext context) {
-    return Obx(() => InkWell(
+  Widget build(BuildContext context, WidgetRef ref) {
+    final hovers = ref.watch(hoversProvider);
+    final hovered = index < hovers.length && hovers[index];
+    return InkWell(
           onHover: (value) {
-            controller.onHover(index, value);
+            ref.read(hoversProvider.notifier).setHover(index, value);
           },
           onTap: () {
             ImageViewer(context, projectList[index].image);
           },
           borderRadius: BorderRadius.circular(30),
           child: AnimatedScale(
-            scale: controller.hovers[index] ? 1.02 : 1.0,
+            scale: hovered ? 1.02 : 1.0,
             duration: const Duration(milliseconds: 200),
             child: GlassContainer(
               padding: const EdgeInsets.only(left: defaultPadding, right: defaultPadding, top: defaultPadding),
@@ -30,6 +31,6 @@ class ProjectStack extends StatelessWidget {
               child: ProjectDetail(index: index),
             ),
           ),
-        ));
+        );
   }
 }

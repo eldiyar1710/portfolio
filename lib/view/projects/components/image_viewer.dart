@@ -18,6 +18,15 @@ class ImageViewer {
               width: MediaQuery.of(context).size.width,
               child: Scaffold(
                 backgroundColor: Theme.of(context).colorScheme.surface,
+                appBar: AppBar(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0,
+                  leading: IconButton(
+                    icon: const Icon(Icons.arrow_back, color: Colors.white),
+                    onPressed: () => Navigator.of(context).pop(),
+                    tooltip: 'Back',
+                  ),
+                ),
                 body: Container(
                   color: Theme.of(context).colorScheme.surface,
                   child: Center(

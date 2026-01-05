@@ -20,14 +20,14 @@ class TopNavigationBar extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            MenuButton(),
-            SizedBox(width: defaultPadding),
-            ConnectButton(),
-            SizedBox(width: defaultPadding / 2),
-            DayNightSwitch(),
-            SizedBox(width: defaultPadding / 2),
-            LanguageSwitch(),
+          children: [
+            MenuButton(onTap: openDrawer ?? () => Scaffold.of(context).openDrawer()),
+            const SizedBox(width: defaultPadding),
+            const ConnectButton(),
+            const SizedBox(width: defaultPadding / 2),
+            const DayNightSwitch(),
+            const SizedBox(width: defaultPadding / 2),
+            const LanguageSwitch(),
           ],
         ),
       );

@@ -6,9 +6,10 @@ import 'view model/locale_controller.dart';
 import 'view model/day_night_controller.dart';
 import 'package:flutter/scheduler.dart';
 import 'theme/app_theme.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 class MyApp extends StatefulWidget {
   const MyApp({super.key});

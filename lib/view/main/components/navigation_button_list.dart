@@ -14,7 +14,7 @@ class NavigationButtonList extends StatelessWidget {
     return TweenAnimationBuilder(tween: Tween(begin: 0.0, end: 1.0), duration: const Duration(milliseconds: 200), builder: (context, value, child) {
       final navs = [
         NavigationTextButton(onTap: () {controller.animateToPage(0, duration: const Duration(milliseconds: 500), curve: Curves.easeIn);}, text: AppLocalizations.of(context).t('nav_home')),
-        if(!Responsive.isLargeMobile(context)) NavigationTextButton(onTap: () { (openDrawer ?? () => Scaffold.of(context).openDrawer())(); }, text: AppLocalizations.of(context).t('nav_about')),
+        NavigationTextButton(onTap: () { (openDrawer ?? () => Scaffold.of(context).openDrawer())(); }, text: AppLocalizations.of(context).t('nav_about')),
         NavigationTextButton(onTap: () {controller.animateToPage(1, duration: const Duration(milliseconds: 500), curve: Curves.easeIn);}, text: AppLocalizations.of(context).t('nav_projects')),
       ];
       return Transform.scale(scale: value, child: isNarrow

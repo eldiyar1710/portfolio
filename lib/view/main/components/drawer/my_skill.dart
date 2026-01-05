@@ -46,14 +46,14 @@ class MySKills extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AnimatedLinearProgressIndicator(percentage: 0.7, title: l.t('skill_flutter'),image: 'assets/icons/flutter.png',),
-        AnimatedLinearProgressIndicator(percentage: 0.9, title: l.t('skill_dart'),image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: l.t('skill_firebase'),image: 'assets/icons/firebase.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.85, title: l.t('skill_sqlite'),image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.8, title: l.t('skill_responsive'),image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.9, title: l.t('skill_clean_arch'),image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.5, title: l.t('skill_bloc'),image: 'assets/icons/bloc.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.93, title: l.t('skill_getx'),image: 'assets/icons/dart.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.95, title: l.t('skill_flutter'),image: 'assets/icons/flutter.png',),
+        AnimatedLinearProgressIndicator(percentage: 0.98, title: l.t('skill_dart'),image: 'assets/icons/dart.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.92, title: l.t('skill_firebase'),image: 'assets/icons/firebase.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.90, title: l.t('skill_sqlite'),image: 'assets/icons/dart.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.95, title: l.t('skill_responsive'),image: 'assets/icons/flutter.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.94, title: l.t('skill_clean_arch'),image: 'assets/icons/flutter.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.88, title: l.t('skill_bloc'),image: 'assets/icons/bloc.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.97, title: l.t('skill_getx'),image: 'assets/icons/dart.png'),
       ],);
   }
 }

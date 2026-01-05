@@ -16,7 +16,7 @@ List<Project> projectList = [
   const Project(
     'project_2_name',
     'project_2_desc',
-    'assets/images/11.png',
+    'assets/images/33.png',
     'https://github.com/eldiyar1710',
   ),
   const Project(

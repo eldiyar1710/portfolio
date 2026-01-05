@@ -10,13 +10,19 @@ class KnowledgeText extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: defaultPadding/2),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SvgPicture.asset('assets/icons/check.svg'),
+          SvgPicture.asset('assets/icons/check.svg', width: 14, height: 14),
           SizedBox(width: defaultPadding/2,),
-          Text(knowledge),
+          Expanded(
+            child: Text(
+              knowledge,
+              softWrap: true,
+              overflow: TextOverflow.visible,
+            ),
+          ),
         ],
       ),
     );
   }
 }
-

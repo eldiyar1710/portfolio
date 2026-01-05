@@ -52,7 +52,7 @@ class Experience extends StatelessWidget {
         ExperienceItem(
           company: 'AMANBAY TECH',
           role: l.t('experience_role'),
-          period: '2023–2024',
+          period: '2025–2026',
           points: [
             l.t('exp_p1'),
             l.t('exp_p2'),

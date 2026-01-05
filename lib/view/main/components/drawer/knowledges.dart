@@ -22,6 +22,7 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(knowledge: l.t('knowledge_3')),
         KnowledgeText(knowledge: l.t('knowledge_4')),
         KnowledgeText(knowledge: l.t('knowledge_5')),
+        KnowledgeText(knowledge: l.t('knowledge_6')),
       ],
     );
   }
