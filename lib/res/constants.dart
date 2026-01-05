@@ -1,0 +1,12 @@
+import 'package:flutter/material.dart';
+const primaryColor = Colors.white;
+const secondaryColor = Color(0xFF242430);
+const darkColor = Color(0xFF191923);
+const bodyTextColor = Color(0xFF8B8B8D);
+const bgColor = Color(0xFF000515);
+const defaultPadding = 20.0;
+const contactPhoneE164 = '77073348137';
+const contactPhoneDisplay = '+7 707 334 8137';
+const whatsappUrl = 'https://wa.me/$contactPhoneE164';
+const whatsappDefaultMessage = 'Здравствуйте! Я по поводу вашего резюме.';
+const cvFileName = 'Резюме Flutter-разработчик Eldiyar Rakhmatullaev от 04-01-2026 15-49.pdf';
