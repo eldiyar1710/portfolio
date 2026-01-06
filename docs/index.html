@@ -31,7 +31,7 @@
   <link rel="preload" href="main.dart.js" as="script">
 
   <script>
-    const serviceWorkerVersion = "2089341656";
+    var serviceWorkerVersion = ""1136728174"";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -53,14 +53,13 @@
         }
       } catch (e) {}
       
-      _flutter.loader.loadEntrypoint({
+      _flutter.loader.load({
         entrypointUrl: 'main.dart.js',
-        serviceWorker: { serviceWorkerVersion: serviceWorkerVersion },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
+        serviceWorker: { serviceWorkerVersion: serviceWorkerVersion }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
       });
     });
   </script>

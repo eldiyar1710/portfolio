@@ -9,4 +9,4 @@ const contactPhoneE164 = '77073348137';
 const contactPhoneDisplay = '+7 707 334 8137';
 const whatsappUrl = 'https://wa.me/$contactPhoneE164';
 const whatsappDefaultMessage = 'Здравствуйте! Я по поводу вашего резюме.';
-const cvFileName = 'Резюме Flutter-разработчик Eldiyar Rakhmatullaev от 04-01-2026 15-49.pdf';
+const cvFileName = 'eldiyar.pdf';

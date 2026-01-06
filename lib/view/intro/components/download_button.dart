@@ -16,9 +16,9 @@ class DownloadButton extends StatelessWidget {
     final mode = DayNightController.effectiveMode(SchedulerBinding.instance.platformDispatcher.platformBrightness);
     return InkWell(
       onTap: () async {
-        const path = 'assets/images/resume.pdf';
-        final fallback = 'assets/images/${Uri.encodeComponent(cvFileName)}';
-        const downloadName = 'Резюме Flutter-разработчик Eldiyar Rakhmatullaev.pdf';
+        const path = 'assets/images/eldiyar.pdf';
+        final fallback = 'assets/images/${Uri.encodeComponent("Резюме Flutter-разработчик Eldiyar Rakhmatullaev от 04-01-2026 15-49.pdf")}';
+        const downloadName = 'eldiyar.pdf';
         await downloadFile(path, downloadName, fallbackPath: fallback);
       },
       child: Container(
