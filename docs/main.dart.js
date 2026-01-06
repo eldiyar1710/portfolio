@@ -74548,7 +74548,7 @@ A.a6x.prototype={
 $0(){var s=0,r=A.R(t.H)
 var $async$$0=A.S(function(a,b){if(a===1)return A.O(b,r)
 while(true)switch(s){case 0:s=2
-return A.Y(A.avJ("assets/images/eldiyar.pdf","eldiyar.pdf","assets/images/"+A.m5(2,"\u0420\u0435\u0437\u044e\u043c\u0435 Flutter-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a Eldiyar Rakhmatullaev \u043e\u0442 04-01-2026 15-49.pdf",B.U,!1)),$async$$0)
+return A.Y(A.avJ("assets/images/eldiyar.pdf","eldiyar.pdf","assets/images/"+A.m5(2,"eldiyar.pdf",B.U,!1)),$async$$0)
 case 2:return A.P(null,r)}})
 return A.Q($async$$0,r)},
 $S:23}
