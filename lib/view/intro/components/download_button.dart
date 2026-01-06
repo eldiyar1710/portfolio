@@ -7,6 +7,7 @@ import '../../../l10n/app_localizations.dart';
 import '../../../view model/day_night_controller.dart';
 import 'package:flutter/scheduler.dart';
 import '../../../theme/gradients.dart';
+import 'package:flutter/foundation.dart';
 
 class DownloadButton extends StatelessWidget {
   const DownloadButton({super.key});
@@ -16,7 +17,8 @@ class DownloadButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         final encoded = Uri.encodeComponent(cvFileName);
-        launchUrl(Uri.parse('assets/images/$encoded'));
+        const base = kIsWeb ? 'assets/assets/images' : 'assets/images';
+        launchUrl(Uri.parse('$base/$encoded'));
       },
       child: Container(
         alignment: Alignment.center,
