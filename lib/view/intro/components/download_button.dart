@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_portfolio/web/download_stub.dart'
-    if (dart.library.html) 'package:flutter_portfolio/web/download_web.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../res/constants.dart';
 import '../../../l10n/app_localizations.dart';
@@ -15,11 +14,9 @@ class DownloadButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final mode = DayNightController.effectiveMode(SchedulerBinding.instance.platformDispatcher.platformBrightness);
     return InkWell(
-      onTap: () async {
-        const path = 'assets/images/eldiyar.pdf';
-        final fallback = 'assets/images/${Uri.encodeComponent("Резюме Flutter-разработчик Eldiyar Rakhmatullaev от 04-01-2026 15-49.pdf")}';
-        const downloadName = 'eldiyar.pdf';
-        await downloadFile(path, downloadName, fallbackPath: fallback);
+      onTap: () {
+        final encoded = Uri.encodeComponent(cvFileName);
+        launchUrl(Uri.parse('assets/images/$encoded'));
       },
       child: Container(
         alignment: Alignment.center,
