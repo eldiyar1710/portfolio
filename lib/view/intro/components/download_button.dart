@@ -16,7 +16,7 @@ class DownloadButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         final encoded = Uri.encodeComponent(cvFileName);
-        launchUrl(Uri.parse('assets/PDF/$encoded'));
+        launchUrl(Uri.parse('assets/images/$encoded'));
       },
       child: Container(
         alignment: Alignment.center,

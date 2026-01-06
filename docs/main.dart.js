@@ -74491,7 +74491,7 @@ n=A.ab(a).ok.ax
 n.toString
 return A.yI(!1,m,!0,A.e5(B.ad,A.ed(A.b([A.cR(o,m,m,m,n.OZ(A.ab(a).ax.k3,B.ar,1.2),m),B.a5M,A.M3(B.O4,A.ab(a).ax.k3.dJ(0.8),m,15)],t.p),B.Q,B.dv,B.hQ),B.z,m,m,new A.dx(m,m,m,r,q,p,B.as),m,m,m,B.Np,m,m,m),m,!0,m,m,m,m,m,m,new A.a6w(),m,m,m)}}
 A.a6w.prototype={
-$0(){A.ma(A.cW("assets/PDF/"+A.m4(2,"\u0420\u0435\u0437\u044e\u043c\u0435 Flutter-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a Eldiyar Rakhmatullaev \u043e\u0442 04-01-2026 15-49.pdf",B.U,!1),0,null))},
+$0(){A.ma(A.cW("assets/images/"+A.m4(2,"\u0420\u0435\u0437\u044e\u043c\u0435 Flutter-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a Eldiyar Rakhmatullaev \u043e\u0442 04-01-2026 15-49.pdf",B.U,!1),0,null))},
 $S:0}
 A.pI.prototype={
 K(a){return A.qB(new A.aem(),B.a0,new A.aL(this.c,new A.ael().$1(A.aT(a,B.H,t.l).w.a.a),t.Y),t.i)}}
