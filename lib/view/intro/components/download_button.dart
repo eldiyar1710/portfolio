@@ -15,10 +15,11 @@ class DownloadButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final mode = DayNightController.effectiveMode(SchedulerBinding.instance.platformDispatcher.platformBrightness);
     return InkWell(
-      onTap: () {
-        final path = 'assets/images/${Uri.encodeComponent(cvFileName)}';
+      onTap: () async {
+        const path = 'assets/images/resume.pdf';
+        final fallback = 'assets/images/${Uri.encodeComponent(cvFileName)}';
         const downloadName = 'Резюме Flutter-разработчик Eldiyar Rakhmatullaev.pdf';
-        downloadFile(path, downloadName);
+        await downloadFile(path, downloadName, fallbackPath: fallback);
       },
       child: Container(
         alignment: Alignment.center,
